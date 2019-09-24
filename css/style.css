@@ -1,0 +1,326 @@
+@charset "UTF-8";
+
+/* --------------------------------------------------------------------------------
+ * Basic setting part.
+ * -------------------------------------------------------------------------------- */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #707070;
+  font-size: 1.2rem;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  transition: 0.5s;
+}
+
+/* footer */
+.body-wrapper {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 7px;
+  box-sizing: border-box;
+}
+
+footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #707070;
+  text-align: center;
+  padding: 7px 0;
+  position: absolute;
+  bottom: 0;
+}
+
+/* --------------------------------------------------------------------------------
+ * Sign in page.
+ * -------------------------------------------------------------------------------- */
+.sign-in-form {
+  width: 30%;
+  padding: 10px;
+  margin: 100px auto 0;
+  box-shadow: 1px 6px 4px 1px rgba(0, 0, 0, 0.15);
+}
+
+.sign-in-form:hover {
+  opacity: 0.8;
+}
+
+.sign-in-form input[type=text],
+.sign-in-form input[type=password] {
+  border-width: 0;
+  display: block;
+  width: 20rem;
+  margin: 50px auto 50px;
+}
+
+.sign-in-form input[type="submit"] {
+  width: 200px;
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sign-in-form .button {
+  display: block;
+  padding: 10px;
+  margin: 50px auto 50px;
+  width: 200px;
+  border-radius: 4px;
+  background-color: #3F51B5;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.sign-in-form .button:hover {
+  opacity: 0.9;
+}
+
+/* --------------------------------------------------------------------------------
+ * Header.
+ * -------------------------------------------------------------------------------- */
+.header {
+  padding: 0 0 0 50px;
+  background-color: #3F51B5
+}
+
+.header:hover {
+  opacity: 0.9;
+}
+
+.header ul {
+  color: #fff;
+  font-size: 1.4rem;
+  list-style-type: none;
+}
+
+.header ul li {
+  padding: 10px 30px 10px 30px;
+  display: inline-block;
+}
+
+.header ul li:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------------------------------------
+ * Product Listing page.
+ * -------------------------------------------------------------------------------- */
+.product-Listing-page {
+  margin: 20px 30px 10px 30px;
+}
+
+.search-criteria {
+  height: 50px;
+  width: 96%;
+  padding: 20px 2% 10px;
+  margin: 20px auto 10px;
+  box-shadow: 1px 6px 4px 1px rgba(0, 0, 0, 0.15);
+  display: table;
+  table-layout: fixed;
+}
+
+.search-criteria:hover {
+  opacity: 0.8;
+}
+
+.search-condition-wrapper {
+  display: table-cell;
+}
+
+.search-criteria input[type=text] {
+  border-width: 0;
+  display: block;
+}
+
+.search-functions {
+  height: 30px;
+  width: 100%;
+  margin: 20px auto;
+  text-align: right;
+}
+
+.search-functions .button {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 10px;
+  width: 200px;
+  border-radius: 4px;
+  background-color: #3F51B5;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.search-functions .button:hover {
+  opacity: 0.9;
+}
+
+.search-results {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  /* padding-left: 20px; */
+  box-shadow: 1px 6px 4px 1px rgba(0, 0, 0, 0.15);
+}
+
+.search-results:hover {
+  opacity: 0.9;
+}
+
+.search-results .results {
+  table-layout: fixed;
+  border-collapse: separate;
+  width: 100%;
+}
+
+.search-results table,
+.search-results th,
+.search-results td {
+  height: 40px;
+  vertical-align: middle;
+}
+
+.search-results th {
+  background-color: #3F51B5;
+  color: #fff;
+}
+
+.search-results td {
+  border-bottom: 1px solid #bbb;
+}
+
+.search-results tr:hover {
+  background-color: rgb(211, 211, 211, 0.5);
+}
+
+
+.search-results .results .width-no {
+  width: 5%;
+}
+
+.search-results .results .width-product-name {
+  width: 30%;
+}
+
+.search-results .results .width-product-code {
+  width: 5%;
+}
+
+.search-results .results .width-product-genre {
+  width: 5%;
+}
+
+.search-results .results .width-product-image {
+  width: 100px;
+}
+
+.search-results .results .width-product-size {
+  width: 30%;
+}
+
+.search-results .results .width-product-color {
+  width: 5%;
+}
+
+.search-results .results .width-product-unit-price {
+  width: 5%;
+}
+
+.search-results .results .width-product-stock {
+  width: 5%;
+}
+
+.search-results .results .width-product-end {
+  width: 5%;
+}
+
+.search-results .results .product-name,
+.search-results .results .product-size {
+  text-align: left;
+}
+
+.search-results .results .product-unit-price,
+.search-results .results .product-stock {
+  text-align: right;
+}
+
+.search-results table img {
+  max-height: 30px;
+}
+
+thead,
+tbody {
+  display: block;
+}
+
+tbody {
+  overflow-y: scroll;
+  height: 330px;
+}
+
+.button.active {
+  background-color: #689F38;
+}
+
+/* --------------------------------------------------------------------------------
+ * Product registering page.
+ * -------------------------------------------------------------------------------- */
+.product-registering-page {
+  margin: 20px 50px 10px 30px;
+}
+
+.register-conditions {
+  height: 500px;
+  width: 100%;
+  padding: 20px 10px 10px 10px;
+  margin: 20px auto 10px;
+  box-shadow: 1px 6px 4px 1px rgba(0, 0, 0, 0.15);
+  display: table;
+  table-layout: fixed;
+}
+
+.register-conditions:hover {
+  opacity: 0.8;
+}
+
+.register-condition-wrapper {
+  display: table-cell;
+}
+
+.register-conditions input[type=text] {
+  border-width: 0;
+  display: block;
+}
+
+.register-functions {
+  height: 30px;
+  width: 100%;
+  margin: 20px auto;
+  text-align: right;
+  padding-left: 20px;
+}
+
+.register-functions .button {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 10px;
+  width: 200px;
+  border-radius: 4px;
+  background-color: #3F51B5;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.register-functions .button:hover {
+  opacity: 0.9;
+}
