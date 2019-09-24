@@ -8,7 +8,8 @@ html {
 }
 
 body {
-  color: #707070;
+  color: black;
+  background-color: #F5F5F5;
   font-size: 1.2rem;
   font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   transition: 0.5s;
@@ -24,8 +25,6 @@ body {
 
 footer {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.15);
-  color: #707070;
   text-align: center;
   padding: 7px 0;
   position: absolute;
@@ -39,7 +38,8 @@ footer {
   width: 30%;
   padding: 10px;
   margin: 100px auto 0;
-  box-shadow: 1px 6px 4px 1px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  border: 1px solid #A9A9A9;
 }
 
 .sign-in-form:hover {
@@ -54,25 +54,19 @@ footer {
   margin: 50px auto 50px;
 }
 
-.sign-in-form input[type="submit"] {
-  width: 200px;
-  background-color: blue;
-  color: #fff;
-  cursor: pointer;
-}
-
 .sign-in-form .button {
   display: block;
   padding: 10px;
   margin: 50px auto 50px;
   width: 200px;
-  border-radius: 4px;
-  background-color: #3F51B5;
-  color: #fff;
+  border-radius: 2px;
+  background-color: #EBEBEB;
+  color: black;
   text-decoration: none;
   text-align: center;
   letter-spacing: 1px;
   font-size: 1.2rem;
+  border: 1px solid #A9A9A9;
 }
 
 .sign-in-form .button:hover {
@@ -84,7 +78,7 @@ footer {
  * -------------------------------------------------------------------------------- */
 .header {
   padding: 0 0 0 50px;
-  background-color: #3F51B5
+  background-color: #323232
 }
 
 .header:hover {
@@ -119,7 +113,8 @@ footer {
   width: 96%;
   padding: 20px 2% 10px;
   margin: 20px auto 10px;
-  box-shadow: 1px 6px 4px 1px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  border: 1px solid #A9A9A9;
   display: table;
   table-layout: fixed;
 }
@@ -149,35 +144,46 @@ footer {
   padding: 10px;
   margin-left: 10px;
   width: 200px;
-  border-radius: 4px;
-  background-color: #3F51B5;
-  color: #fff;
+  border-radius: 2px;
+  background-color: #EBEBEB;
+  color: black;
   text-decoration: none;
   text-align: center;
   letter-spacing: 1px;
   font-size: 1.2rem;
+  border: 1px solid #A9A9A9;
 }
 
 .search-functions .button:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .search-results {
   width: 100%;
   margin: 20px auto;
   text-align: center;
-  /* padding-left: 20px; */
-  box-shadow: 1px 6px 4px 1px rgba(0, 0, 0, 0.15);
+  border: 1px solid #A9A9A9;
 }
 
 .search-results:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .search-results .results {
   table-layout: fixed;
   border-collapse: separate;
   width: 100%;
+}
+
+thead,
+tbody {
+  display: block;
+}
+
+tbody {
+  overflow-y: scroll;
+  /* height: 330px; */
+  height: 58vh;
 }
 
 .search-results table,
@@ -188,18 +194,25 @@ footer {
 }
 
 .search-results th {
-  background-color: #3F51B5;
-  color: #fff;
+  background-color: #EBEBEB;
+  border-bottom: 1px solid #bbb;
+}
+
+.search-results tr {
+  background-color: #fff;
 }
 
 .search-results td {
   border-bottom: 1px solid #bbb;
 }
 
-.search-results tr:hover {
-  background-color: rgb(211, 211, 211, 0.5);
+.search-results a {
+  color: black;
 }
 
+.search-results tr:hover {
+  background-color: rgba(233, 233, 233, 0.1);
+}
 
 .search-results .results .width-no {
   width: 5%;
@@ -255,18 +268,9 @@ footer {
   max-height: 30px;
 }
 
-thead,
-tbody {
-  display: block;
-}
-
-tbody {
-  overflow-y: scroll;
-  height: 330px;
-}
-
 .button.active {
-  background-color: #689F38;
+  background-color: #FE5EAD;
+  color: #fff;
 }
 
 /* --------------------------------------------------------------------------------
@@ -281,7 +285,6 @@ tbody {
   width: 100%;
   padding: 20px 10px 10px 10px;
   margin: 20px auto 10px;
-  box-shadow: 1px 6px 4px 1px rgba(0, 0, 0, 0.15);
   display: table;
   table-layout: fixed;
 }
@@ -314,7 +317,7 @@ tbody {
   width: 200px;
   border-radius: 4px;
   background-color: #3F51B5;
-  color: #fff;
+  color: black;
   text-decoration: none;
   text-align: center;
   letter-spacing: 1px;
@@ -322,5 +325,5 @@ tbody {
 }
 
 .register-functions .button:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
