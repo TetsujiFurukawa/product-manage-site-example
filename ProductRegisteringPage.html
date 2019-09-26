@@ -11,6 +11,7 @@
 <body class="body-wrapper">
   <header class="header">
     <ul>
+      <li>EXAPMLE SITE</li>
       <li>購入</a></li>
       <li>商品</li>
       <li>在庫</li>
@@ -18,32 +19,49 @@
   </header>
   <section class="product-registering-page">
     <h1>商品登録</h1>
-    <form class="register-form">
-      <div class="register-conditions">
-        <div class="register-condition-wrapper">
-          <input type="text" name="product-name" placeholder="商品名">
+    <div class="register-conditions">
+      <form class="register-form">
+        <div class="register-area-wrapper left">
+          <div class="register-condition-wrapper">
+            <input type="text" name="product-code" placeholder="*商品コード">
+          </div>
+          <div class="register-condition-wrapper">
+            <input type="text" name="product-name" placeholder="*商品名">
+          </div>
+          <div class="register-condition-wrapper">
+            <select name="product-genre" value="">
+              <option value='' disabled selected style='display:none;'>*ジャンル</option>
+              <option value="1">靴・スニーカー</option>
+              <option value="2">トップス</option>
+              <option value="3">バッグ</option>
+            </select>
+          </div>
+          <div class="register-condition-wrapper">
+            <input type="text" name="product-name" placeholder="サイズ・規格">
+          </div>
+          <div class="register-condition-wrapper">
+            <input type="text" name="product-name" placeholder="色">
+          </div>
+          <div class="register-condition-wrapper">
+            <input type="text" name="product-name" placeholder="*単価">
+          </div>
+          <div class="search-condition-wrapper">
+            <input type="checkbox" name="product-end" value="1">販売終了
+            <input type="text" name="product-name" placeholder="販売終了日">
+          </div>
         </div>
-        <div class="register-condition-wrapper">
-          <input type="text" name="product-code" placeholder="商品コード">
+        <div class="register-area-wrapper right">
+          <div class="search-condition-wrapper">
+            <p>商品イメージ</p>
+          </div>
+          <img src="img/test11.png" />
         </div>
-        <div class="register-condition-wrapper">
-          <select name="product-genre" value="">
-            <option value='' disabled selected style='display:none;'>ジャンル</option>
-            <option value="1">書籍</option>
-            <option value="2">日用品</option>
-            <option value="3">レジャー</option>
-            <option value="4">雑貨</option>
-          </select>
-        </div>
-        <div class="register-condition-wrapper">
-          <input type="checkbox" name="product-end" value="1">販売終了
-        </div>
-      </div>
-      <div class="register-functions">
-        <a href="#" class="button">戻る</a>
-        <a href="#" class="button active">登録</a>
-      </div>
-    </form>
+      </form>
+    </div>
+    <div class="register-functions">
+      <a href="ProductListingPage.html" class="button">戻る</a>
+      <a href="#" class="button active">登録</a>
+    </div>
   </section>
   <footer class="footer-wrapper">
     <div class="footer">

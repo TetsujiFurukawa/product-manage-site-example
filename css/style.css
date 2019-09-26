@@ -8,11 +8,11 @@ html {
 }
 
 body {
-  color: black;
+  color: #323232;
   background-color: #F5F5F5;
   font-size: 1.2rem;
   font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 
 /* footer */
@@ -34,42 +34,47 @@ footer {
 /* --------------------------------------------------------------------------------
  * Sign in page.
  * -------------------------------------------------------------------------------- */
-.sign-in-form {
+.sign-in-page {
   width: 30%;
-  padding: 10px;
-  margin: 100px auto 0;
+  margin: 150px auto 0;
   background-color: #fff;
   border: 1px solid #A9A9A9;
 }
 
-.sign-in-form:hover {
+.sign-in-title {
+  height: 30px;
+  width: 100%;
+  margin: 0 auto 0;
+  background-color: #323232;
+}
+
+.sign-in-page:hover {
   opacity: 0.8;
 }
 
-.sign-in-form input[type=text],
-.sign-in-form input[type=password] {
+.sign-in-page input[type=text],
+.sign-in-page input[type=password] {
   border-width: 0;
   display: block;
   width: 20rem;
   margin: 50px auto 50px;
 }
 
-.sign-in-form .button {
+.sign-in-page .button {
   display: block;
   padding: 10px;
   margin: 50px auto 50px;
   width: 200px;
   border-radius: 2px;
-  background-color: #EBEBEB;
-  color: black;
+  background-color: #A9A9A9;
+  color: white;
   text-decoration: none;
   text-align: center;
   letter-spacing: 1px;
   font-size: 1.2rem;
-  border: 1px solid #A9A9A9;
 }
 
-.sign-in-form .button:hover {
+.sign-in-page .button:hover {
   opacity: 0.9;
 }
 
@@ -77,7 +82,6 @@ footer {
  * Header.
  * -------------------------------------------------------------------------------- */
 .header {
-  padding: 0 0 0 50px;
   background-color: #323232
 }
 
@@ -92,7 +96,7 @@ footer {
 }
 
 .header ul li {
-  padding: 10px 30px 10px 30px;
+  padding: 15px 30px 15px 30px;
   display: inline-block;
 }
 
@@ -108,7 +112,16 @@ footer {
   margin: 20px 30px 10px 30px;
 }
 
-.search-criteria {
+.product-Listing-page h1,
+.product-Listing-page th {
+  font-weight: normal;
+}
+
+.product-Listing-page h1 {
+  font-size: 1.6rem;
+}
+
+.search-criteria form {
   height: 50px;
   width: 96%;
   padding: 20px 2% 10px;
@@ -145,13 +158,12 @@ footer {
   margin-left: 10px;
   width: 200px;
   border-radius: 2px;
-  background-color: #EBEBEB;
-  color: black;
+  background-color: #A9A9A9;
+  color: white;
   text-decoration: none;
   text-align: center;
   letter-spacing: 1px;
   font-size: 1.2rem;
-  border: 1px solid #A9A9A9;
 }
 
 .search-functions .button:hover {
@@ -183,7 +195,7 @@ tbody {
 tbody {
   overflow-y: scroll;
   /* height: 330px; */
-  height: 58vh;
+  height: 56vh;
 }
 
 .search-results table,
@@ -207,7 +219,7 @@ tbody {
 }
 
 .search-results a {
-  color: black;
+  color: #323232;
 }
 
 .search-results tr:hover {
@@ -227,7 +239,7 @@ tbody {
 }
 
 .search-results .results .width-product-genre {
-  width: 5%;
+  width: 10%;
 }
 
 .search-results .results .width-product-image {
@@ -235,7 +247,7 @@ tbody {
 }
 
 .search-results .results .width-product-size {
-  width: 30%;
+  width: 25%;
 }
 
 .search-results .results .width-product-color {
@@ -269,7 +281,7 @@ tbody {
 }
 
 .button.active {
-  background-color: #FE5EAD;
+  background-color: rgb(254, 94, 173, 0.55);
   color: #fff;
 }
 
@@ -277,28 +289,51 @@ tbody {
  * Product registering page.
  * -------------------------------------------------------------------------------- */
 .product-registering-page {
-  margin: 20px 50px 10px 30px;
+  width: 600px;
+  margin: 20px auto 10px;
+}
+
+.product-registering-page h1 {
+  font-weight: normal;
+  font-size: 1.6rem;
 }
 
 .register-conditions {
   height: 500px;
   width: 100%;
-  padding: 20px 10px 10px 10px;
+  padding: 20px 40px 10px;
   margin: 20px auto 10px;
-  display: table;
-  table-layout: fixed;
+  background-color: white;
 }
 
 .register-conditions:hover {
   opacity: 0.8;
 }
 
-.register-condition-wrapper {
+register-conditions form {
+  display: table;
+  table-layout: fixed;
+}
+
+.register-area-wrapper {
+  vertical-align: top;
   display: table-cell;
 }
 
+.register-area-wrapper.left {
+  width: 500px;
+}
+
+.register-area-wrapper img {
+  width: 230px;
+  max-width: 230px;
+}
+
 .register-conditions input[type=text] {
+  margin-top: 30px;
+  margin-bottom: 30px;
   border-width: 0;
+  font-size: 1.4rem;
   display: block;
 }
 
@@ -317,7 +352,7 @@ tbody {
   width: 200px;
   border-radius: 4px;
   background-color: #3F51B5;
-  color: black;
+  color: #323232;
   text-decoration: none;
   text-align: center;
   letter-spacing: 1px;
