@@ -16,7 +16,9 @@ body {
 
 /* footer */
 .body-wrapper {
-  min-height: 100vh;
+  min-height: 90vh;
+  /* ↑ Fallback of calc() for unsupported browsers */
+  min-height: calc(100vh-50px);
   position: relative;
   padding-bottom: 35px;
   box-sizing: border-box;
@@ -88,7 +90,14 @@ footer {
  * Header.
  * -------------------------------------------------------------------------------- */
 .header {
-  background-color: #1B435D
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  margin: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #1B435D;
 }
 
 .header:hover {
@@ -115,6 +124,7 @@ footer {
  * Product Listing page.
  * -------------------------------------------------------------------------------- */
 .Listing-page .listing-title {
+  margin-top: 50px;
   height: 35px;
   background-color: #78BBE6;
   padding: 0 10px;
@@ -298,7 +308,7 @@ tbody {
  * Product registering page.
  * -------------------------------------------------------------------------------- */
 .registering-page {
-  margin: 0 auto 10px;
+  margin: 50px auto 10px;
 }
 
 .registering-page .registering-title {
