@@ -114,18 +114,18 @@ footer {
 /* --------------------------------------------------------------------------------
  * Product Listing page.
  * -------------------------------------------------------------------------------- */
-.product-Listing-page .listing-title {
+.Listing-page .listing-title {
   height: 35px;
   background-color: #78BBE6;
   padding: 0 10px;
 }
 
-.product-Listing-page h1,
-.product-Listing-page th {
+.Listing-page h1,
+.Listing-page th {
   font-weight: normal;
 }
 
-.product-Listing-page h1 {
+.Listing-page h1 {
   line-height: 35px;
   color: #ffffff;
   font-size: 1.4rem;
@@ -297,17 +297,17 @@ tbody {
 /* --------------------------------------------------------------------------------
  * Product registering page.
  * -------------------------------------------------------------------------------- */
-.product-registering-page {
+.registering-page {
   margin: 0 auto 10px;
 }
 
-.product-registering-page .registering-title {
+.registering-page .registering-title {
   height: 35px;
   background-color: #78BBE6;
   padding: 0 10px;
 }
 
-.product-registering-page h1 {
+.registering-page h1 {
   line-height: 35px;
   font-weight: normal;
   color: #ffffff;
