@@ -1,7 +1,5 @@
-@charset "UTF-8";
-
 /* --------------------------------------------------------------------------------
- * Basic setting part.
+ * Basic settings.
  * -------------------------------------------------------------------------------- */
 html {
   font-size: 62.5%;
@@ -9,27 +7,28 @@ html {
 
 body {
   color: #323232;
-  background-color: rgb(236, 239, 241, 0.45);
+  background-color: #ECEFF1;
   font-size: 1.2rem;
   font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
-/* footer */
 .body-wrapper {
-  min-height: 90vh;
+  min-height: 95vh;
   /* ↑ Fallback of calc() for unsupported browsers */
-  min-height: calc(100vh-50px);
+  min-height: calc(100vh - 50px);
   position: relative;
   padding-bottom: 35px;
   box-sizing: border-box;
 }
 
 footer {
+  height: 20px;
   width: 100%;
   text-align: center;
-  padding: 5px 0;
+  padding-top: 10px;
   position: absolute;
   bottom: 0;
+  background-color: #ECEFF1;
 }
 
 /* --------------------------------------------------------------------------------
@@ -56,8 +55,10 @@ footer {
   color: #ffffff;
 }
 
-.sign-in-page:hover {
-  opacity: 0.8;
+.sign-in-conditions {
+  width: 80%;
+  margin: 20px auto 0;
+  text-align: center;
 }
 
 .sign-in-page input[type=text],
@@ -86,6 +87,29 @@ footer {
   opacity: 0.9;
 }
 
+/* .sign-in-conditions .mat-form-field {
+  margin: 20px auto 0;
+  width: 200px;
+}
+
+.sign-in-page .raised-button {
+  margin: 50px auto 50px;
+  width: 200px;
+  border-radius: 2px;
+  background-color: #78BBE6;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  box-shadow: none;
+}
+
+.sign-in-page .raised-button:hover {
+  opacity: 0.8;
+}
+
+.sign-in-page .raised-button:disabled {
+  opacity: 0.4;
+} */
 /* --------------------------------------------------------------------------------
  * Header.
  * -------------------------------------------------------------------------------- */
@@ -120,8 +144,49 @@ footer {
   cursor: pointer;
 }
 
+/* .toolbar {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  margin: 0;
+  min-height: 50px;
+  max-height: 50px;
+  background-color: #1B435D;
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+.toolbar-row {
+  padding: 0 0;
+}
+
+.menu {
+  height: 50px;
+}
+
+.menu:hover {
+  opacity: 0.7;
+}
+
+.menu.btnSystemName {
+  padding-left: 10px;
+}
+
+.menu.btnSignOut {
+  text-align: right;
+  padding-right: 10px;
+  margin-right: 0;
+  right: 0;
+  position: absolute;
+  height: 50px;
+}
+
+.header .btnSidenav {
+  display: none;
+} */
 /* --------------------------------------------------------------------------------
- * Product Listing page.
+ * Basic settings of the listing page.
  * -------------------------------------------------------------------------------- */
 .Listing-page .listing-title {
   margin-top: 50px;
@@ -141,11 +206,15 @@ footer {
   font-size: 1.4rem;
 }
 
-.search-criteria form {
+.search-form {
+  background-color: #ffffff;
+}
+
+.search-criteria {
   height: 50px;
-  width: 96%;
-  padding: 20px 2% 10px;
-  margin: 0 auto 10px;
+  width: 95%;
+  padding: 15px 10px 5px;
+  margin: 0 0 0;
   background-color: #ffffff;
   display: table;
   table-layout: fixed;
@@ -155,7 +224,7 @@ footer {
   opacity: 0.8;
 }
 
-.search-condition-wrapper {
+.search-criteria-wrapper {
   display: table-cell;
 }
 
@@ -164,10 +233,32 @@ footer {
   display: block;
 }
 
+/* .search-criteria .form-field {
+  margin: 0 auto 0;
+  width: 200px;
+}
+
+.search-criteria .date-from .form-field,
+.search-criteria .date-to .form-field {
+  width: 100px;
+} */
+
 .search-functions {
+  display: table;
   height: 30px;
   width: 100%;
-  margin: 20px auto;
+  margin: 0 auto;
+  padding: 5px 0px;
+  background-color: #ECEFF1;
+}
+
+.search-functions-paginator {
+  display: table-cell;
+  width: 365px;
+}
+
+.search-functions-buttons {
+  display: table-cell;
   text-align: right;
 }
 
@@ -194,9 +285,35 @@ footer {
   color: #ffffff;
 }
 
+/* .search-functions .mat-paginator-container {
+  justify-content: left;
+  padding-left: 8px;
+  min-height: 50px;
+  background-color: #ECEFF1;
+}
+
+.search-functions .raised-button {
+  margin-right: 10px;
+  width: 200px;
+  border-radius: 2px;
+  background-color: #78BBE6;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  box-shadow: none;
+}
+
+.search-functions .raised-button:hover {
+  opacity: 0.8;
+}
+
+.search-functions .raised-button.active {
+  background-color: #F99F48;
+  color: #ffffff;
+} */
+
 .search-results {
   width: 100%;
-  /* margin: 1px auto; */
   text-align: center;
 }
 
@@ -210,44 +327,51 @@ footer {
   width: 100%;
 }
 
-thead,
-tbody {
+.search-results thead,
+.search-results tbody {
   display: block;
 }
 
-tbody {
+.search-results tbody {
   overflow-y: scroll;
-  /* height: 330px; */
-  height: 57vh;
+  height: 55vh;
+  /* ↑ Fallback of calc() for unsupported browsers */
+  height: calc(100vh - 310px);
 }
 
-.search-results table,
-.search-results th,
-.search-results td {
+.search-results .results table,
+.search-results .results th,
+.search-results .results td {
   height: 40px;
   vertical-align: middle;
+  text-align: center;
 }
 
-.search-results th {
+.search-results .results th {
   color: #323232;
   background-color: #D5EEFF;
   border-bottom: 1px solid #F2F2F2;
+  text-align: center;
+  min-width: 100px;
 }
 
-.search-results tr {
+.search-results .results tr {
   background-color: #ffffff;
 }
 
-.search-results td {
+.search-results .results td {
   border-bottom: 1px solid #F2F2F2;
+  text-align: center;
+  min-width: 100px;
 }
 
-.search-results a {
+.search-results .results a {
   color: #323232;
 }
 
-.search-results tr:hover {
+.search-results .results tr:hover {
   background-color: rgb(213, 238, 255, 0.1);
+  cursor: pointer;
 }
 
 .search-results .results .width-no {
@@ -305,10 +429,11 @@ tbody {
 }
 
 /* --------------------------------------------------------------------------------
- * Product registering page.
+ * Basic settings of the registering page.
  * -------------------------------------------------------------------------------- */
 .registering-page {
   margin: 50px auto 10px;
+  padding-bottom: 25px;
 }
 
 .registering-page .registering-title {
@@ -325,8 +450,7 @@ tbody {
 }
 
 .registering-conditions {
-  height: 440px;
-  /* margin: 0 auto 10px; */
+  height: 520px;
   background-color: #ffffff;
 }
 
@@ -339,15 +463,22 @@ tbody {
 .registering-functions-wrapper {
   width: 770px;
   margin: 0 auto;
-  padding: 20px 40px 10px;
+  padding: 0 0 10px;
 }
 
+.registering-functions-wrapper {
+  padding-top: 20px;
+}
 
-.registering-conditions:hover {
+.registering-conditions .button:hover {
   opacity: 0.8;
 }
 
-registering-conditions form {
+/* .registering-conditions .raised-button:hover {
+  opacity: 0.8;
+} */
+
+.registering-conditions .registering-form {
   display: table;
   table-layout: fixed;
 }
@@ -358,12 +489,12 @@ registering-conditions form {
 }
 
 .registering-area-wrapper.left {
+  padding-top: 10px;
   width: 500px;
 }
 
-.registering-area-wrapper.right,
-.registering-area-wrapper img {
-  width: 200px;
+.registering-area-wrapper.right {
+  width: 270px;
   text-align: right;
 }
 
@@ -372,7 +503,12 @@ registering-conditions form {
 }
 
 .registering-area-wrapper p {
+  margin-left: 70px;
   text-align: left;
+}
+
+.registering-conditions .registering-condition-wrapper {
+  margin: 10px auto 0;
 }
 
 .registering-conditions input[type=text] {
@@ -383,6 +519,15 @@ registering-conditions form {
   display: block;
 }
 
+/* .registering-conditions .form-field {
+  width: 20rem;
+  font-size: 1.4rem;
+}
+
+.registering-conditions .form-field.width-wide {
+  width: 40rem;
+} */
+
 .registering-conditions p {
   margin-top: 30px;
   font-size: 1.4rem;
@@ -391,10 +536,6 @@ registering-conditions form {
 
 .registering-functions {
   height: 30px;
-  /* width: 700px; */
-  /* margin: 20px auto; */
-  /* padding-right: 135px; */
-  /* margin-right: 135px; */
   text-align: right;
 }
 
@@ -429,3 +570,206 @@ registering-conditions form {
 .mgr-70px {
   margin-right: 70px;
 }
+
+/* .registering-area-wrapper .raised-button,
+.registering-functions .raised-button {
+  width: 200px;
+  border-radius: 2px;
+  background-color: #78BBE6;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  box-shadow: none;
+  margin-left: 18px;
+}
+
+.registering-area-wrapper .raised-button {
+  margin-top: 10px;
+}
+
+.registering-functions .raised-button:hover {
+  opacity: 0.8;
+}
+
+.registering-functions .raised-button.active {
+  background-color: #F99F48;
+  color: #ffffff;
+}
+
+.registering-functions .raised-button:disabled {
+  opacity: 0.4;
+} */
+
+/* --------------------------------------------------------------------------------
+ * Other Material settings.
+ * -------------------------------------------------------------------------------- */
+/* .mat-dialog-container {
+  background-color: #ECEFF1;
+  box-shadow: none;
+  padding: 0 !important;
+}
+
+.mat-checkbox.mat-accent.mat-checkbox-checked .mat-checkbox-background {
+  background-color: #F99F48;
+} */
+
+/* --------------------------------------------------------------------------------
+ * Smart Phones and tablets settings.
+ * -------------------------------------------------------------------------------- */
+/* @media(max-width:768px) {
+  .body-wrapper {
+    padding-bottom: 35px;
+  }
+
+  .Listing-page h1 {
+    text-align: center;
+  }
+
+  .search-criteria,
+  .search-criteria-wrapper {
+    display: block;
+  }
+
+  .search-criteria {
+    width: 100%;
+    height: 170px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .search-criteria .form-field {
+    width: 95%;
+  }
+
+  .search-criteria .form-field-dates {
+    width: 100%;
+  }
+
+  .search-criteria .date-from .form-field,
+  .search-criteria .date-to .form-field {
+    width: 100%;
+  }
+
+  .search-functions,
+  .search-functions-paginator,
+  .search-functions-buttons {
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+
+  .search-functions {
+    height: auto;
+    margin-bottom: 0 auto 5px;
+    text-align: center;
+  }
+
+  .search-functions-paginator {
+    width: 100%;
+  }
+
+  .search-functions .mat-paginator-container {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    min-height: 30px;
+  }
+
+  .search-functions .raised-button {
+    margin-bottom: 2px;
+    height: 50px;
+    width: 100%;
+  }
+
+  .search-results .results thead {
+    display: none;
+  }
+
+  .search-results tbody {
+    overflow: hidden;
+    height: auto;
+  }
+
+  .search-results .results tr {
+    border-bottom: 2px solid #F2F2F2;
+    display: block;
+    height: 210px;
+  }
+
+  .search-results .results td {
+    padding: 0 10px;
+    margin: 0;
+    display: block;
+    height: 2rem;
+    text-align: right;
+    border-bottom: 0;
+  }
+
+  .search-results .results td:before {
+    content: attr(data-label);
+    float: left;
+  }
+
+  .search-results .results td:first-child {
+    margin-top: 5px !important;
+  }
+
+  .registering-page {
+    padding-bottom: 55px;
+    text-align: center;
+  }
+
+  .registering-conditions .registering-form,
+  .registering-area-wrapper {
+    display: block;
+  }
+
+  .registering-title-wrapper,
+  .registering-conditions-wrapper,
+  .registering-condition-wrapper,
+  .registering-functions-wrapper,
+  .registering-area-wrapper.left,
+  .registering-area-wrapper.right,
+  .registering-area-wrapper img,
+  .registering-area-wrapper .raised-button,
+  .registering-functions .raised-button,
+  .registering-conditions p {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .registering-conditions {
+    height: auto;
+  }
+
+  .registering-conditions .registering-conditions-wrapper {
+    padding-bottom: 0;
+  }
+
+  .registering-conditions .registering-condition-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  .registering-conditions .form-field,
+  .registering-conditions .form-field.width-wide {
+    width: 95%;
+    font-size: 1.2rem;
+  }
+
+  .registering-functions-wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .registering-area-wrapper .raised-button,
+  .registering-functions-wrapper .raised-button {
+    display: block;
+    height: 50px;
+    margin-top: 0;
+    margin-bottom: 2px;
+  }
+} */

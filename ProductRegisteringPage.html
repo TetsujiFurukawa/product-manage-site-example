@@ -28,45 +28,50 @@
         <form class="registering-form">
           <div class="registering-area-wrapper left">
             <div class="registering-condition-wrapper">
-              <input type="text" name="product-code" placeholder="*商品コード">
+              <input id="product-code" type="text" placeholder="*商品コード">
             </div>
             <div class="registering-condition-wrapper">
-              <input type="text" name="product-name" placeholder="*商品名">
+              <input id="product-name" type="text" placeholder="*商品名">
             </div>
             <div class="registering-condition-wrapper">
-              <select name="product-genre" value="">
-                <option value='' disabled selected style='display:none;'>*ジャンル</option>
-                <option value="1">靴・スニーカー</option>
-                <option value="2">トップス</option>
-                <option value="3">バッグ</option>
-              </select>
+              <div class="registering-condition-wrapper">
+                <select id="product-genre" value="">
+                  <option value='' disabled selected style='display:none;'>*ジャンル</option>
+                  <option value="1">靴・スニーカー</option>
+                  <option value="2">トップス</option>
+                  <option value="3">バッグ</option>
+                </select>
+              </div>
             </div>
             <div class="registering-condition-wrapper">
-              <input type="text" name="product-name" placeholder="サイズ・規格">
+              <input id="product-size-standard" type="text" placeholder="サイズ・規格">
             </div>
             <div class="registering-condition-wrapper">
-              <input type="text" name="product-name" placeholder="色">
+              <input id="product-color" type="text" placeholder="色">
             </div>
             <div class="registering-condition-wrapper">
-              <input type="text" name="product-name" placeholder="*単価">
+              <input id="product-unit-price" type="text" placeholder="*単価">
             </div>
-            <div class="search-condition-wrapper">
-              <input type="checkbox" name="product-end" value="1">販売終了
-              <input type="text" name="product-name" placeholder="販売終了日">
+            <div class="registering-condition-wrapper">
+              <input id="end-of-sale" type="checkbox" name="product-end" value="1">販売終了
+            </div>
+            <div class="registering-condition-wrapper">
+              <input id="end-of-sale-date" type="text" placeholder="販売終了日">
             </div>
           </div>
           <div class="registering-area-wrapper right">
-            <p>商品イメージ</p>
-            <img src="img/test11.png" />
-            <a href="#" class="button active">画像のアップロード</a>
+            <p class="form-field">商品イメージ</p>
+            <img src="img/test11.png" class="image-preview" />
+            <a id="file-input-button" href="#" class="button active">画像のアップロード</a>
+            <a id="file-input-clear-button" href="#" class="button">画像のクリア</a>
           </div>
         </form>
       </div>
     </div>
     <div class="registering-functions">
       <div class="registering-functions-wrapper">
-        <a href="ProductListingPage.html" class="button">戻る</a>
-        <a href="#" class="button active mgr-70px">登録</a>
+        <a id="return-button" href="ProductListingPage.html" class="button">戻る</a>
+        <a id="save-button" href="#" class="button active">登録</a>
       </div>
     </div>
   </section>

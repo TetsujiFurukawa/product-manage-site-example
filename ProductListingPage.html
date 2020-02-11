@@ -21,31 +21,46 @@
     <div class="listing-title">
       <h1>商品一覧</h1>
     </div>
-    <div class="search-criteria">
-      <form class="search-form">
-        <div class="search-condition-wrapper">
-          <input type="text" name="product-name" placeholder="商品名">
+    <form class="search-form">
+      <div class="search-criteria">
+        <div class="search-criteria-wrapper">
+          <div id="searchCondition1">
+            <input id="product-name" type="text" placeholder="商品名">
+          </div>
         </div>
-        <div class="search-condition-wrapper">
-          <input type="text" name="product-code" placeholder="商品コード">
+        <div class="search-criteria-wrapper">
+          <div id="searchCondition2">
+            <input id="product-code" type="text" placeholder="商品コード">
+          </div>
         </div>
-        <div class="search-condition-wrapper">
-          <select name="product-genre" value="">
-            <option value='' disabled selected style='display:none;'>ジャンル</option>
-            <option value="1">靴・スニーカー</option>
-            <option value="2">トップス</option>
-            <option value="3">バッグ</option>
-          </select>
+        <div class="search-criteria-wrapper">
+          <div id="searchCondition3">
+            <select id="product-genre-label" value="">
+              <option value='' disabled selected style='display:none;'>ジャンル</option>
+              <option value="1">靴・スニーカー</option>
+              <option value="2">トップス</option>
+              <option value="3">バッグ</option>
+            </select>
+          </div>
         </div>
-        <div class="search-condition-wrapper">
-          <input type="checkbox" name="product-end" value="1">販売終了
+        <div class="search-criteria-wrapper">
+          <div id="searchCondition4">
+            <div class="search-condition-wrapper">
+              <input id="end-of-sale" type="checkbox" name="product-end" value="1">販売終了
+            </div>
+          </div>
         </div>
-      </form>
-    </div>
+      </div>
+    </form>
     <div class="search-functions">
-      <a href="#" class="button">新規</a>
-      <a href="#" class="button">クリア</a>
-      <a href="#" class="button active">検索</a>
+      <div class="search-functions-paginator">
+        Paginator area
+      </div>
+      <div class="search-functions-buttons">
+        <a href="#" id="new-button" class="button">新規</a>
+        <a href="#" id="clear-button" class="button">クリア</a>
+        <a href="#" id="search-button" class="button active">検索</a>
+      </div>
     </div>
     <div class="search-results">
       <table class="results">
